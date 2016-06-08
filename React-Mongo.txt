@@ -1,0 +1,11 @@
+1.  clone this project https://github.com/coryhouse/pluralsight-redux-starter.git
+
+2.  create mongo db using mongo labs https://mlab.com/home
+
+3.  after getting the starter project to run, get the mongodb connection string from the mongolabs site and in the project folder run the following:
+
+    export MONGO_URL=mongodb://twc:testpass@ds025583.mlab.com:25583/coursedb 
+
+4.  npm install --save mongodb kerberos
+
+5.  setup the mongo connection properties in the server.js file, same file you're setting up express
