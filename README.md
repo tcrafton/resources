@@ -1,2 +1,2 @@
 # Resources
-Resource for General Info
+Resources for general info
