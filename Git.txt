@@ -1,0 +1,116 @@
+git init
+
+--Pull a single branch
+git clone git@gitlab.com:mitchel_spears_rsi/virtustream-xstream.git -b demo-2-tommy --single-branch
+
+
+--List contents of a commit
+git cat-file -p "sha"
+
+example:
+git cat-file -p c052f3d06641e8bab8aedf9a2290caac243d3ff1
+
+
+--Get sha of commits
+git log
+
+
+--count files in git
+git count-objects
+
+
+--create a tag  (a simple label attached to an object for the project)
+git tag -a mytag -m "Current status of project"
+
+
+--list branches
+git branch
+
+--create a new branch
+git branch "branchName"
+
+
+--location of branches
+.git/refs/heads/
+
+--change branches
+git checkout "nameOfBranch"
+(this changes HEAD to put at the branch you're changing to)
+
+--merge changes from master
+git merge master  (while in the branch you want to merge into)
+
+
+--create an alias
+git config alias.st status  (creates alias st for status in current git repo)
+Use: git st
+
+--create alias in user directory
+git config --global alias.st status
+
+--alias for committing all modified files using the provided message
+git config --global alias.cma "commit --all -m"
+
+--get in easier to read version of log
+git log --pretty=oneline
+
+--get a cool log with colors and a graph
+git config --global alias.lg "log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
+
+--show changes
+git diff
+
+--show only words that changed
+git diff --word-diff
+
+--show diff with more than standard 3 above/below lines of change
+git diff --word-diff --unified=10
+
+--produce a more readable diff (slower)
+git diff --patience
+
+--faster version of a more readable diff
+git diff --histogram
+
+--delete a branch
+git branch -d "nameOfBranch"
+
+--delete a branch that has commits that have not been merged
+git branch -D "nameOfBranch"
+
+--merge "nameOfBranch" into the branch you are in
+git merge "nameOfBranch" -m "M"
+
+--to accept changes to a file from other branch
+git checkout --theirs "nameOfFile"
+git add "nameOfFile"
+git commit -m "M"
+
+--to use the file in the branch you are in
+git checkout --ours "nameOfFile"
+
+
+
+Notes:
+Types of Git Objects
+-Blobs
+-Trees
+-Commits
+-Annotated Tags
+
+A branch is just a reference to a commit.
+
+HEAD is file that is a reference to a branch.
+
+
+
+Misc:
+cmd //c tree     - shows tree view of directory
+
+
+
+
+
+
+
+

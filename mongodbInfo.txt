@@ -1,0 +1,20 @@
+--Start Mongo from c:/MongoDB/bin using:
+./mongod -f c:/Users/tommy.crafton/training/MongoDbTest/Pluralsight/mongod.conf 
+
+
+--If you have admin rights you can run as a service using:
+./mongod -f c:/Users/tommy.crafton/training/MongoDbTest/Pluralsight/mongod.conf --install
+net start mongodb
+
+
+
+--Start the shell from c:/MongoDB/bin using:
+./mongo
+
+
+
+--Show databases
+show dbs
+
+
+

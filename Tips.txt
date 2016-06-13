@@ -1,0 +1,19 @@
+--create and switch to directory in one command
+mkdir nameOfNewDirectory && cd $_
+
+
+--remove directory with files
+rm -rf "nameOfDirectory"/
+
+
+
+--get the default directory npm writes to
+npm config get prefix
+
+--what I did to allow running globally installed node modules
+export PATH=$PATH:/c/Users/tommy.crafton/AppData/Roaming/npm
+
+--export for mongodb connections
+export MONGO_URL=mongodb://twc:testpass@ds025583.mlab.com:25583/coursedb 
+
+
