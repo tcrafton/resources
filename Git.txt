@@ -90,6 +90,12 @@ git commit -m "M"
 git checkout --ours "nameOfFile"
 
 
+--Change URL for remote repository
+git remote -v
+git remote set-url origin https://github.com/tcrafton/ReactClientSideAuthentication.git
+git remote -v
+
+
 
 Notes:
 Types of Git Objects
