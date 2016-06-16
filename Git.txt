@@ -95,6 +95,9 @@ git remote -v
 git remote set-url origin https://github.com/tcrafton/ReactClientSideAuthentication.git
 git remote -v
 
+--Add remote github to local project
+git remote add origin https://github.com/tcrafton/ReactMasterDetail.git
+git push origin master
 
 
 Notes:
