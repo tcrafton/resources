@@ -17,3 +17,9 @@ export PATH=$PATH:/c/Users/tommy.crafton/AppData/Roaming/npm
 export MONGO_URL=mongodb://twc:testpass@ds025583.mlab.com:25583/coursedb 
 
 
+--edit path in Windows
+edit path (from start)
+edit PATH variable
+save
+
+
