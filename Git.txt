@@ -100,6 +100,10 @@ git remote add origin https://github.com/tcrafton/ReactMasterDetail.git
 git push origin master
 
 
+--To revert to previous commit, ignoring any changes
+git reset --hard HEAD
+
+
 Notes:
 Types of Git Objects
 -Blobs
