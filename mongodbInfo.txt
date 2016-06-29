@@ -17,4 +17,8 @@ net start mongodb
 show dbs
 
 
+--Import json data into MongoDB (from c:/MongoDB/bin)
+./mongoimport -h ds023664.mlab.com:23664 -d eventtrackdb -c events -u EventAdmin -p testpass --file c:/Users/tommy.crafton/training/EventTracker/src/api/eventData.json --jsonArray
+
+
 
