@@ -103,6 +103,9 @@ git push origin master
 --To revert to previous commit, ignoring any changes
 git reset --hard HEAD
 
+-- ignore local changes for a file
+git update-index --assume-unchanged <file>
+
 
 Notes:
 Types of Git Objects
